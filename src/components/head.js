@@ -2,36 +2,44 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
-import { useStaticQuery, graphql } from 'gatsby';
+// import { useStaticQuery, graphql } from 'gatsby';
 
 // https://www.gatsbyjs.com/docs/add-seo-component/
 
 const Head = ({ title, description, image }) => {
   const { pathname } = useLocation();
 
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            defaultTitle: title
-            defaultDescription: description
-            siteUrl
-            defaultImage: image
-            twitterUsername
-          }
-        }
-      }
-    `,
-  );
+  // const { site } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       site {
+  //         siteMetadata {
+  //           defaultTitle: title
+  //           defaultDescription: description
+  //           siteUrl
+  //           defaultImage: image
+  //           twitterUsername
+  //         }
+  //       }
+  //     }
+  //   `,
+  // );
 
-  const {
-    defaultTitle,
-    defaultDescription,
-    siteUrl,
-    defaultImage,
-    twitterUsername,
-  } = site.siteMetadata;
+  // const {
+  //   defaultTitle,
+  //   defaultDescription,
+  //   siteUrl,
+  //   defaultImage,
+  //   twitterUsername,
+  // } = site.siteMetadata;
+
+  const { defaultTitle, defaultDescription, siteUrl, defaultImage, twitterUsername } = {
+    defaultTitle: 'Muhammad Hammad',
+    defaultDescription: 'Full Stack Software Engineer',
+    siteUrl: 'https://mhammadsheikh.netlify.app/',
+    defaultImage: '',
+    twitterUsername: 'Hammad_S786',
+  };
 
   const seo = {
     title: title || defaultTitle,
