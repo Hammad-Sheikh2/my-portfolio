@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+// import { useStaticQuery, graphql } from 'gatsby';
+import experience from '../../data/experience.json';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -165,27 +166,28 @@ const StyledTabPanel = styled.div`
 `;
 
 const Jobs = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              company
-              location
-              range
-              url
-            }
-            html
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     jobs: allMarkdownRemark(
+  //       filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
+  //       sort: { fields: [frontmatter___date], order: DESC }
+  //     ) {
+  //       edges {
+  //         node {
+  //           frontmatter {
+  //             title
+  //             company
+  //             location
+  //             range
+  //             url
+  //           }
+  //           html
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+  const data = experience;
 
   const jobsData = data.jobs.edges;
 
@@ -273,7 +275,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company, location, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -294,7 +296,10 @@ const Jobs = () => {
                       </span>
                     </h3>
 
-                    <p className="range">{range}</p>
+                    <p className="range">
+                      <span style={{ display: 'block' }}>{range}</span>
+                      <span style={{ display: 'block' }}>{location}</span>
+                    </p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>

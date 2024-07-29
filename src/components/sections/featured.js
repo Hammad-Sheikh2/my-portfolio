@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+// import { useStaticQuery, graphql } from 'gatsby';
+import projects from '../../data/projects.json';
+// import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
@@ -304,32 +305,33 @@ const StyledProject = styled.li`
 `;
 
 const Featured = () => {
-  const data = useStaticQuery(graphql`
-    {
-      featured: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/featured/" } }
-        sort: { fields: [frontmatter___date], order: ASC }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              cover {
-                childImageSharp {
-                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-                }
-              }
-              tech
-              github
-              external
-              cta
-            }
-            html
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     featured: allMarkdownRemark(
+  //       filter: { fileAbsolutePath: { regex: "/content/featured/" } }
+  //       sort: { fields: [frontmatter___date], order: ASC }
+  //     ) {
+  //       edges {
+  //         node {
+  //           frontmatter {
+  //             title
+  //             cover {
+  //               childImageSharp {
+  //                 gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+  //               }
+  //             }
+  //             tech
+  //             github
+  //             external
+  //             cta
+  //           }
+  //           html
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+  const data = projects;
 
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
   const revealTitle = useRef(null);
@@ -356,7 +358,8 @@ const Featured = () => {
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, cta } = frontmatter;
-            const image = getImage(cover);
+            // const image = getImage(cover);
+            const image = cover;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -403,7 +406,8 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
+                    {/* <GatsbyImage image={image} alt={title} className="img" /> */}
+                    <img src={image} alt={title} className="img" />
                   </a>
                 </div>
               </StyledProject>

@@ -1,0 +1,115 @@
+{
+  "noteworthyProjects": {
+    "projects": {
+      "edges": [
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Talent Hiring Remote Platform",
+              "tech": ["Ruby on Rails", "Javascript", "Typescript", "Tailwind CSS", "PostgreSQL"],
+              "github": null,
+              "external": null
+            },
+            "html": "<p>In my role as a full-stack engineer, I was responsible for developing and maintaining a business-focused talent acquisition platform. This platform was designed to streamline client hiring processes by integrating Calendly for virtual meeting scheduling. The goal was to enhance talent acquisition through efficient online coordination and recruitment features.</p>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Real-Time Messaging App",
+              "tech": [
+                "Ruby on Rails",
+                "Vue JS",
+                "Javascript",
+                "PostgreSQL",
+                "Slack Tool Kit",
+                "Naive UI",
+                "Elastic Serach"
+              ],
+              "github": null,
+              "external": null
+            },
+            "html": "<p>I served as a Full Stack Software Engineer, leading the development of a platform focused on enabling real-time interactions and seamless collaboration across various mediums. My responsibilities spanned from designing and implementing scalable backend infrastructure for handling real-time data and concurrent user interactions to creating intuitive frontend interfaces optimized for dynamic communication and content sharing. Emphasizing performance and usability, I conducted thorough testing and optimization throughout the development process to ensure a high-quality user experience.</p>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "E-Commerce",
+              "tech": [
+                "Ruby on Rails",
+                "React",
+                "Javascript",
+                "PostgreSQL",
+                "Elastic Serach",
+                "AWS"
+              ],
+              "github": null,
+              "external": null
+            },
+            "html": "<p>This project involved developing an e-commerce platform utilizing a robust tech stack, including Ruby on Rails, React, JavaScript, PostgreSQL, Elastic Search, and AWS. The platform was designed to provide an intuitive and efficient shopping experience, with a focus on seamless integration and scalability. Key contributions included backend development, frontend design, and optimizing search functionalities using Elastic Search. This project showcased expertise in full-stack development and cloud-based solutions.</p>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "Coffee-Shop",
+              "tech": ["Ruby on Rails", "React", "Javascript", "PostgreSQL"],
+              "github": "https://github.com/Hammad-Sheikh2/coffee-shop-test-project",
+              "external": null
+            },
+            "html": "<p>This was a test project. A Rails application for a coffee shop that allows customers to place orders and view the menu. The application uses a PostgreSQL database and the jsonapi_serializer gem to serialize data for the APIs.</p>"
+          }
+        }
+      ]
+    }
+  },
+  "featured": {
+    "edges": [
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Health Benefits Personalization",
+            "cover": "/projects_images/health_benefits_personalization.jpg",
+            "tech": [
+              "Ruby on Rails",
+              "Node JS",
+              "Typescript",
+              "React",
+              "Playwright",
+              "CI/CD",
+              "AWS"
+            ],
+            "github": null,
+            "external": null
+          },
+          "html": "<p>This project focuses on providing a personalized health benefits experience to users. The application collects personal information through an intuitive survey, then leverages custom machine learning models to suggest insurance plans that best suit individual needs. Users can easily purchase recommended plans within the app. A comprehensive user dashboard offers visual insights through various graphs, helping users understand and manage their benefits effectively. Key contributions to this project included optimizing data processing, significantly improving performance by converting ORM queries to raw SQL and implementing Materialized Views. These enhancements reduced processing time from 15-20 seconds to mere milliseconds, ensuring a smooth and efficient user experience.</p><p>Steered bi-weekly architectural discussions, successfully integrating 20+ new calculation modules. Orchestrated cross-functional collaboration among users, development, and health teams, achieving a 92% testing success. Analyzed UI adjustments' impact, driving a 12% increase in user engagement. Achieved efficient automated deployment via CI/CD,reducing deployment time by 25% and boosting release. Achieved efficient automated testing via CI/CD,reducing error chances and boosting efficiency by 85%.Implemented Regression Tests for the different services using Playwright. For Deployment, we are using AWS EC2 instances</p>"
+        }
+      },
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Utility Service Provider",
+            "cover": "/projects_images/utility_service_provider.jpg",
+            "tech": ["Ruby on Rails", "AWS"],
+            "github": null,
+            "external": null
+          },
+          "html": "<p>In this project, the focus was on delivering innovative solutions for a leading utility service provider. The application was designed to streamline various operational processes, including real-time data collection, analysis, and visualization. Leveraging advanced technologies, the project aimed to enhance efficiency and accuracy in service delivery. Key features included automated meter reading, predictive maintenance, and a comprehensive analytics dashboard for monitoring utility consumption and performance. My role involved optimizing backend processes, implementing robust data handling mechanisms, and ensuring the system's scalability to support a growing user base. This project not only improved operational efficiency but also contributed to sustainable resource management.</p><p>Successfully integrated five new complex calculation modules, enhancing the service capabilities and providing more accurate and diverse utility calculations for end-users. Dockerized the entire project, ensuring a consistent and isolated environment for development, testing, and production.Implemented an automated deployment pipeline using AWS Elastic Beanstalk. This automated flow facilitated seamless code updates,reduced downtime, and ensured a reliable and scalable deployment process.</p>"
+        }
+      },
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Supermouth",
+            "cover": "/projects_images/supermouth.jpeg",
+            "tech": ["Remix-Run/React", "Shopify/Hydrogen", "Shopify/Oxygen", "Remix-Run/Node"],
+            "github": null,
+            "external": null
+          },
+          "html": "<p>SuperMouth is an e-commerce platform designed to provide a seamless online shopping experience. The project utilized a modern tech stack, incorporating Remix-Run/React for the frontend, Remix-Run/Node for server-side rendering, and Shopify/Hydrogen for integrating with the Shopify platform. Key contributions included developing and optimizing the e-commerce site's user interface, implementing secure and efficient data-fetching mechanisms using Shopify's GraphQL API, and enhancing the Admin Dashboard for better management and analytics. This project demonstrated expertise in full-stack development, e-commerce integration, and user-centric design, ensuring a smooth and engaging shopping experience for customers.</p><p>This project involves developing an online shopping app. The main app and admin-related features are built using Remix-Run/React, Remix-Run/Node, Shopify/Hydrogen, and Shopify/Oxygen.I have worked on the e-commerce site, as well as the Admin Dashboard and API-related functionalities for this project.</p>"
+        }
+      }
+    ]
+  }
+}

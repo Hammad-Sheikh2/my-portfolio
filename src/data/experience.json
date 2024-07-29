@@ -1,0 +1,54 @@
+{
+  "jobs": {
+    "edges": [
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Software Engineer",
+            "company": "Devsinc",
+            "location": "Lahore, Pakistan",
+            "range": "July 2022 - Present",
+            "url": "https://www.devsinc.com/"
+          },
+          "html": "<ul><li>Led the development of impactful customer-facing projects as the go-to Ruby on Rails specialist, driving the creation of dynamic web applications that met clients' unique needs</li><li>Translated intricate programming requirements into seamless front-end website experiences, ensuring exceptional user interactions, while also effectively addressing intricate challenges in back-end server code to guarantee reliability and scalability</li><li>Pioneered the implementation of a robust automated testing framework, utilizing cutting-edge automation tools</li><li>Collaborated with the Technical Director to develop web applications, produced well-organized, optimized, and documented source code promptly, and worked with other programmers to design and implement features</li><li>Debugged existing source code and polished feature sets to ensure they met the client's requirements</li><li>Proficient in Amazon Web Services includes EC2, Beanstalk, CloudWatch, S3, Route 53, and IAM</li><li>Implemented AWS CodeBuild and CodePipeline for seamless integration and deployment, effectively managing multiple Beanstalk instances</li><li>Created frontend web designs using React JS and Vue JS, ensuring the responsiveness of web applications</li><li>Extensive experience in Real-Time Applications and deep knowledge of Message Frameworks</li><li>Improved the performance of live projects by fixing bugs, addressing memory leaks, optimizing quiries, and caching etc</li></ul>"
+        }
+      },
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Developer",
+            "company": "letsremotify",
+            "location": "Lahore, Pakistan",
+            "range": "October 2022 - April 2023",
+            "url": "https://letsremotify.com/"
+          },
+          "html": "<ul><li>Ensured the performance and quality of reusable code</li><li>Proficiency in Ruby on Rails and Embedded Ruby with Tailwind CSS</li><li>Created responsive frontend web designs and improved code health through a consistent approach and regular auditing using GitHub</li></ul>"
+        }
+      },
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Freelance Software Engineer",
+            "company": "Fiverr",
+            "location": "Lahore, Pakistan",
+            "range": "December 2020 - June 2023",
+            "url": "https://fiverr.com/"
+          },
+          "html": "<ul><li>Worked as a freelacer on various projects with remote teams across the globe</li><li>Delivered over 80 projects</li></ul>"
+        }
+      },
+      {
+        "node": {
+          "frontmatter": {
+            "title": "Junior Web Developer",
+            "company": "Edupedia Online",
+            "location": "Gujranwala, Pakistan",
+            "range": "May 2020 - August 2022",
+            "url": "https://www.linkedin.com/company/edupediaonline"
+          },
+          "html": "<ul><li>Worked as a junior REACT developer</li><li>Convert 50+ figma pages to user interface</li><li>Learned about REACT, Redux in-depth</li></ul>"
+        }
+      }
+    ]
+  }
+}
